@@ -890,4 +890,127 @@ Wire Wire Line
 Wire Wire Line
 	1850 2800 4350 2800
 Connection ~ 4350 2800
+$Comp
+L LP_components:MikroBus J?
+U 1 1 5F903B4C
+P 8750 1500
+F 0 "J?" H 8750 1665 50  0000 C CNN
+F 1 "MikroBus" H 8750 1574 50  0000 C CNN
+F 2 "" H 8650 1500 50  0001 C CNN
+F 3 "" H 8650 1500 50  0001 C CNN
+	1    8750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F90EDD3
+P 8200 2400
+F 0 "#PWR?" H 8200 2150 50  0001 C CNN
+F 1 "GND" H 8205 2227 50  0000 C CNN
+F 2 "" H 8200 2400 50  0001 C CNN
+F 3 "" H 8200 2400 50  0001 C CNN
+	1    8200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F90F2D4
+P 9300 2400
+F 0 "#PWR?" H 9300 2150 50  0001 C CNN
+F 1 "GND" H 9305 2227 50  0000 C CNN
+F 2 "" H 9300 2400 50  0001 C CNN
+F 3 "" H 9300 2400 50  0001 C CNN
+	1    9300 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2300 9300 2300
+Wire Wire Line
+	9300 2300 9300 2400
+Wire Wire Line
+	8250 2300 8200 2300
+Wire Wire Line
+	8200 2300 8200 2400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F917932
+P 7650 2200
+F 0 "#PWR?" H 7650 2050 50  0001 C CNN
+F 1 "+3.3V" H 7665 2373 50  0000 C CNN
+F 2 "" H 7650 2200 50  0001 C CNN
+F 3 "" H 7650 2200 50  0001 C CNN
+	1    7650 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9250 2200
+Wire Wire Line
+	9250 2100 9600 2100
+Wire Wire Line
+	9250 2000 9600 2000
+Text Label 9600 2000 0    50   ~ 0
+SCL
+Text Label 9600 2100 0    50   ~ 0
+SDA
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 5F92966A
+P 7200 1950
+F 0 "SW?" V 7246 1902 50  0000 R CNN
+F 1 "SW_MEC_5G" V 7550 2150 50  0000 R CNN
+F 2 "" H 7200 2150 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 7200 2150 50  0001 C CNN
+	1    7200 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8250 1700 7200 1700
+Wire Wire Line
+	7200 1700 7200 1750
+$Comp
+L power:GND #PWR?
+U 1 1 5F931DF1
+P 7200 2300
+F 0 "#PWR?" H 7200 2050 50  0001 C CNN
+F 1 "GND" H 7205 2127 50  0000 C CNN
+F 2 "" H 7200 2300 50  0001 C CNN
+F 3 "" H 7200 2300 50  0001 C CNN
+	1    7200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2300 7200 2150
+Wire Wire Line
+	5500 5100 5250 5100
+Wire Wire Line
+	5500 5200 5250 5200
+Text Label 5250 5100 2    50   ~ 0
+MOSI
+Text Label 5250 5200 2    50   ~ 0
+MISO
+Wire Wire Line
+	5500 5400 5250 5400
+Wire Wire Line
+	5500 5300 5250 5300
+Text Label 5250 5400 2    50   ~ 0
+SCK
+Text Label 5250 5300 2    50   ~ 0
+CS
+Wire Wire Line
+	8250 1800 8050 1800
+Wire Wire Line
+	8250 1900 8050 1900
+Wire Wire Line
+	8250 2000 8050 2000
+Wire Wire Line
+	8250 2100 8050 2100
+Text Label 8050 1800 2    50   ~ 0
+CS
+Text Label 8050 1900 2    50   ~ 0
+SCK
+Text Label 8050 2000 2    50   ~ 0
+MISO
+Text Label 8050 2100 2    50   ~ 0
+MOSI
+Wire Wire Line
+	8250 2200 7650 2200
 $EndSCHEMATC

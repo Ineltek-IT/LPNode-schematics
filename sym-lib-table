@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name LP_components)(type Legacy)(uri ${KIPRJMOD}/LP_components.lib)(options "")(descr ""))
+  (lib (name local-symbols)(type Legacy)(uri /home/francesco/Downloads/local-symbols.lib)(options "")(descr ""))
 )
