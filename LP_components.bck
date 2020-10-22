@@ -6,7 +6,7 @@ K RTC, I2C Timekeeping Chip
 F http://www.ti.com/lit/ds/symlink/bq32002.pdf
 $ENDCMP
 #
-$CMP MCP16415-I-UN
+$CMP MCP16417-I-UN
 D Low IQ Boost Converter with Programmable Low Battery, UVLO and Automatic Input-to-Output Bypass Operation, MSOP10
 K LED driver low voltage
 F http://ww1.microchip.com/downloads/en/DeviceDoc/MCP1641X-Family-Data-Sheet-DS20006394B.pdf
@@ -70,6 +70,12 @@ $CMP MCP73832-5-OT
 D Single cell, Li-Ion/Li-Po charge management controller, 4.50V, Open-Drain Status Output, in SOT23-5 package
 K battery charger lithium
 F http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf
+$ENDCMP
+#
+$CMP MXH2101
+D Full Speed USB to I2C Bridge, DFN-10
+K FTDI USB I2C Interface Converter
+F https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT200XD.pdf
 $ENDCMP
 #
 $CMP RX8010SJ

@@ -72,6 +72,12 @@ K battery charger lithium
 F http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf
 $ENDCMP
 #
+$CMP MXH2101
+D Temperature and relative humidity sensor, DFN-10
+K Temperature Humidty sensor
+F https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT200XD.pdf
+$ENDCMP
+#
 $CMP RX8010SJ
 D Serial, I2C Real-time clock, Trickle charger, 3V to 3.6V VCC, -40°C to +85°C, SOIC-8
 K RTC, I2C Timekeeping Chip

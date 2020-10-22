@@ -129,17 +129,6 @@ Connection ~ 6100 2450
 Wire Wire Line
 	7050 2300 7050 2350
 $Comp
-L LP_components:MCP1812BT U2
-U 1 1 5F8C7994
-P 8500 1700
-F 0 "U2" H 8500 2067 50  0000 C CNN
-F 1 "MCP1812BT" H 8500 1976 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8250 2050 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21813F.pdf" H 8500 1600 50  0001 C CNN
-	1    8500 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R7
 U 1 1 5F8C8C5F
 P 8450 1050
@@ -877,17 +866,6 @@ F 3 "~" H 2350 1700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:USB_B_Micro J3
-U 1 1 5F9520E4
-P 1350 1850
-F 0 "J3" H 1407 2317 50  0000 C CNN
-F 1 "USB_B_Micro_Charge" H 1407 2226 50  0000 C CNN
-F 2 "" H 1500 1800 50  0001 C CNN
-F 3 "~" H 1500 1800 50  0001 C CNN
-	1    1350 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D1
 U 1 1 5F972B10
 P 1950 1700
@@ -935,9 +913,6 @@ Wire Wire Line
 Connection ~ 1250 2350
 Wire Wire Line
 	1250 2350 1250 2250
-NoConn ~ 1650 1850
-NoConn ~ 1650 1950
-NoConn ~ 1650 2050
 Wire Wire Line
 	3350 1700 3400 1700
 Wire Wire Line
@@ -1161,4 +1136,169 @@ Wire Wire Line
 Wire Wire Line
 	10550 1600 10550 1700
 Connection ~ 10550 1600
+$Comp
+L LP_components:MCP1812AT-033-OT U7
+U 1 1 5F91EAB9
+P 8500 1700
+F 0 "U7" H 8500 2067 50  0000 C CNN
+F 1 "MCP1812AT-033-OT" H 8500 1976 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8250 2050 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21813F.pdf" H 8500 1600 50  0001 C CNN
+	1    8500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LP_components:MXH2101 U2
+U 1 1 5F93593C
+P 4500 6950
+F 0 "U2" H 4500 7731 50  0000 C CNN
+F 1 "MXH2101" H 4500 7640 50  0000 C CNN
+F 2 "LPNode:DFN-10-1EP_3.6x2.8mm_P0.65mm_EP1.7x3.1mm" H 5900 6450 50  0001 C CNN
+F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT200XD.pdf" H 4500 6950 50  0001 C CNN
+	1    4500 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5F938000
+P 4400 6150
+F 0 "#PWR03" H 4400 6000 50  0001 C CNN
+F 1 "+3.3V" H 4415 6323 50  0000 C CNN
+F 2 "" H 4400 6150 50  0001 C CNN
+F 3 "" H 4400 6150 50  0001 C CNN
+	1    4400 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 6150 4400 6350
+$Comp
+L power:GND #PWR04
+U 1 1 5F93E29D
+P 4400 7600
+F 0 "#PWR04" H 4400 7350 50  0001 C CNN
+F 1 "GND" H 4405 7427 50  0000 C CNN
+F 2 "" H 4400 7600 50  0001 C CNN
+F 3 "" H 4400 7600 50  0001 C CNN
+	1    4400 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 7600 4400 7550
+NoConn ~ 3800 6650
+NoConn ~ 3800 6850
+Wire Wire Line
+	5200 6650 5550 6650
+Wire Wire Line
+	5200 6750 5550 6750
+Text Label 5550 6650 0    50   ~ 0
+SCL
+Text Label 5550 6750 0    50   ~ 0
+SDA
+$Comp
+L power:GND #PWR02
+U 1 1 5F963A0C
+P 3850 6350
+F 0 "#PWR02" H 3850 6100 50  0001 C CNN
+F 1 "GND" H 3855 6177 50  0000 C CNN
+F 2 "" H 3850 6350 50  0001 C CNN
+F 3 "" H 3850 6350 50  0001 C CNN
+	1    3850 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5F964581
+P 3850 6150
+F 0 "C11" H 3965 6196 50  0000 L CNN
+F 1 "100n" H 3965 6105 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.8" H 3888 6000 50  0001 C CNN
+F 3 "~" H 3850 6150 50  0001 C CNN
+	1    3850 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5F964A6A
+P 3850 5900
+F 0 "#PWR01" H 3850 5750 50  0001 C CNN
+F 1 "+3.3V" H 3865 6073 50  0000 C CNN
+F 2 "" H 3850 5900 50  0001 C CNN
+F 3 "" H 3850 5900 50  0001 C CNN
+	1    3850 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5900 3850 6000
+Wire Wire Line
+	3850 6300 3850 6350
+$Comp
+L power:GND #PWR?
+U 1 1 5F97B604
+P 1700 2250
+F 0 "#PWR?" H 1700 2000 50  0001 C CNN
+F 1 "GND" H 1705 2077 50  0000 C CNN
+F 2 "" H 1700 2250 50  0001 C CNN
+F 3 "" H 1700 2250 50  0001 C CNN
+	1    1700 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2250 1700 2050
+Wire Wire Line
+	1700 2050 1650 2050
+$Comp
+L Device:R R?
+U 1 1 5F985DED
+P 7100 5400
+F 0 "R?" V 6893 5400 50  0000 C CNN
+F 1 "NC" V 6984 5400 50  0000 C CNN
+F 2 "" V 7030 5400 50  0001 C CNN
+F 3 "~" H 7100 5400 50  0001 C CNN
+	1    7100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F9862FD
+P 7100 5600
+F 0 "R?" V 6893 5600 50  0000 C CNN
+F 1 "NC" V 6984 5600 50  0000 C CNN
+F 2 "" V 7030 5600 50  0001 C CNN
+F 3 "~" H 7100 5600 50  0001 C CNN
+	1    7100 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 5400 6700 5400
+Wire Wire Line
+	6950 5600 6950 5500
+Wire Wire Line
+	6950 5500 6700 5500
+Wire Wire Line
+	7250 5400 7400 5400
+Wire Wire Line
+	7250 5600 7400 5600
+Text Label 7400 5400 0    50   ~ 0
+D+
+Text Label 7400 5600 0    50   ~ 0
+D-
+$Comp
+L Connector:USB_B_Micro J3
+U 1 1 5F9520E4
+P 1350 1850
+F 0 "J3" H 1407 2317 50  0000 C CNN
+F 1 "USB_B_Micro_Charge" H 1407 2226 50  0000 C CNN
+F 2 "" H 1500 1800 50  0001 C CNN
+F 3 "~" H 1500 1800 50  0001 C CNN
+	1    1350 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1850 1750 1850
+Wire Wire Line
+	1650 1950 1750 1950
+Text Label 1750 1850 0    50   ~ 0
+D+
+Text Label 1750 1950 0    50   ~ 0
+D-
 $EndSCHEMATC
