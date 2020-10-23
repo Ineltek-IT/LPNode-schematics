@@ -6,6 +6,12 @@ K RTC, I2C Timekeeping Chip
 F http://www.ti.com/lit/ds/symlink/bq32002.pdf
 $ENDCMP
 #
+$CMP BQ32002_copy
+D Serial, I2C Real-time clock, 3V to 3.6V VCC, -40°C to +85°C, SOIC-8
+K RTC, I2C Timekeeping Chip
+F http://www.ti.com/lit/ds/symlink/bq32002.pdf
+$ENDCMP
+#
 $CMP MCP16417-I-UN
 D Low IQ Boost Converter with Programmable Low Battery, UVLO and Automatic Input-to-Output Bypass Operation, MSOP10
 K LED driver low voltage
@@ -79,6 +85,12 @@ F https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT200XD.pdf
 $ENDCMP
 #
 $CMP RX8010SJ
+D Serial, I2C Real-time clock, Trickle charger, 3V to 3.6V VCC, -40°C to +85°C, SOIC-8
+K RTC, I2C Timekeeping Chip
+F http://www.ti.com/lit/ds/symlink/bq32000.pdf
+$ENDCMP
+#
+$CMP RX8130CE
 D Serial, I2C Real-time clock, Trickle charger, 3V to 3.6V VCC, -40°C to +85°C, SOIC-8
 K RTC, I2C Timekeeping Chip
 F http://www.ti.com/lit/ds/symlink/bq32000.pdf
