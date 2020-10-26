@@ -128,17 +128,6 @@ Wire Wire Line
 Connection ~ 6100 2450
 Wire Wire Line
 	7050 2300 7050 2350
-$Comp
-L Device:R R7
-U 1 1 5F8C8C5F
-P 8450 1050
-F 0 "R7" V 8657 1050 50  0000 C CNN
-F 1 "NC" V 8566 1050 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 8380 1050 50  0001 C CNN
-F 3 "~" H 8450 1050 50  0001 C CNN
-	1    8450 1050
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7050 1600 7350 1600
 $Comp
@@ -168,7 +157,7 @@ L Device:C C6
 U 1 1 5F8CDB19
 P 7950 1900
 F 0 "C6" H 8065 1946 50  0000 L CNN
-F 1 "C" H 8065 1855 50  0000 L CNN
+F 1 "220n" H 8065 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_4x5.8" H 7988 1750 50  0001 C CNN
 F 3 "~" H 7950 1900 50  0001 C CNN
 	1    7950 1900
@@ -228,10 +217,6 @@ F 3 "" H 7950 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7950 2350 7950 2050
-Wire Wire Line
-	7600 1050 7600 1600
-Wire Wire Line
-	7600 1050 8300 1050
 $Comp
 L Device:CP C9
 U 1 1 5F8D5640
@@ -245,8 +230,6 @@ F 3 "~" H 9250 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9250 1650 9250 1600
-Wire Wire Line
-	8900 1600 9250 1600
 $Comp
 L power:GND #PWR0108
 U 1 1 5F8D6D10
@@ -273,9 +256,6 @@ F 3 "" H 9250 2300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9250 2300 9250 1950
-Wire Wire Line
-	9250 1600 9450 1600
-Connection ~ 9250 1600
 $Comp
 L power:+3.3V #PWR0110
 U 1 1 5F8D9B1F
@@ -287,12 +267,6 @@ F 3 "" H 10550 1550 50  0001 C CNN
 	1    10550 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8600 1050 9250 1050
-Wire Wire Line
-	9250 1050 9250 1600
-Text Notes 7900 800  0    50   ~ 0
-Bypass resistor, to check \noperation w/o LDO. NC
 Wire Notes Line
 	4800 2800 4800 600 
 Text Notes 4900 700  0    50   ~ 0
@@ -558,7 +532,7 @@ L Device:R R3
 U 1 1 5F954CC1
 P 2150 6150
 F 0 "R3" V 2050 6150 50  0000 C CNN
-F 1 "R" V 2250 6150 50  0000 C CNN
+F 1 "0" V 2250 6150 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 2080 6150 50  0001 C CNN
 F 3 "~" H 2150 6150 50  0001 C CNN
 	1    2150 6150
@@ -959,7 +933,7 @@ Wire Wire Line
 Wire Wire Line
 	6800 2300 6800 2350
 Text Label 9750 2950 0    50   ~ 0
-BATT_EMPTY
+~BATT_EMPTY
 Wire Wire Line
 	5450 1350 5600 1350
 $Comp
@@ -981,17 +955,6 @@ Wire Wire Line
 	7450 1600 7600 1600
 Text Label 7450 1400 2    50   ~ 0
 Vboost
-$Comp
-L power:+BATT #PWR0128
-U 1 1 5F9EBEAA
-P 8250 2350
-F 0 "#PWR0128" H 8250 2200 50  0001 C CNN
-F 1 "+BATT" H 8265 2523 50  0000 C CNN
-F 2 "" H 8250 2350 50  0001 C CNN
-F 3 "" H 8250 2350 50  0001 C CNN
-	1    8250 2350
-	1    0    0    -1  
-$EndComp
 Text Label 6800 2300 1    50   ~ 0
 Vboost
 $Comp
@@ -1173,57 +1136,8 @@ Wire Wire Line
 	3850 5900 3850 6000
 Wire Wire Line
 	3850 6300 3850 6350
-$Comp
-L power:GND #PWR05
-U 1 1 5F97B604
-P 1700 2250
-F 0 "#PWR05" H 1700 2000 50  0001 C CNN
-F 1 "GND" H 1705 2077 50  0000 C CNN
-F 2 "" H 1700 2250 50  0001 C CNN
-F 3 "" H 1700 2250 50  0001 C CNN
-	1    1700 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 2250 1700 2050
 Wire Wire Line
 	1700 2050 1650 2050
-$Comp
-L Device:R R15
-U 1 1 5F985DED
-P 7100 5400
-F 0 "R15" V 6893 5400 50  0000 C CNN
-F 1 "NC" V 6984 5400 50  0000 C CNN
-F 2 "" V 7030 5400 50  0001 C CNN
-F 3 "~" H 7100 5400 50  0001 C CNN
-	1    7100 5400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R16
-U 1 1 5F9862FD
-P 7100 5600
-F 0 "R16" V 6893 5600 50  0000 C CNN
-F 1 "NC" V 6984 5600 50  0000 C CNN
-F 2 "" V 7030 5600 50  0001 C CNN
-F 3 "~" H 7100 5600 50  0001 C CNN
-	1    7100 5600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6950 5400 6700 5400
-Wire Wire Line
-	6950 5600 6950 5500
-Wire Wire Line
-	6950 5500 6700 5500
-Wire Wire Line
-	7250 5400 7400 5400
-Wire Wire Line
-	7250 5600 7400 5600
-Text Label 7400 5400 0    50   ~ 0
-D+
-Text Label 7400 5600 0    50   ~ 0
-D-
 $Comp
 L Connector:USB_B_Micro J3
 U 1 1 5F9520E4
@@ -1239,10 +1153,6 @@ Wire Wire Line
 	1650 1850 1750 1850
 Wire Wire Line
 	1650 1950 1750 1950
-Text Label 1750 1850 0    50   ~ 0
-D+
-Text Label 1750 1950 0    50   ~ 0
-D-
 $Comp
 L Connector:Conn_01x01_Male J7
 U 1 1 5F930E85
@@ -1259,17 +1169,14 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x01_Male J8
 U 1 1 5F9393B6
-P 9450 1400
-F 0 "J8" V 9250 1350 50  0000 L CNN
-F 1 "TP_LDO" V 9350 1250 50  0000 L CNN
-F 2 "" H 9450 1400 50  0001 C CNN
-F 3 "~" H 9450 1400 50  0001 C CNN
-	1    9450 1400
+P 9550 1400
+F 0 "J8" V 9350 1350 50  0000 L CNN
+F 1 "TP_LDO" V 9450 1250 50  0000 L CNN
+F 2 "" H 9550 1400 50  0001 C CNN
+F 3 "~" H 9550 1400 50  0001 C CNN
+	1    9550 1400
 	0    1    1    0   
 $EndComp
-Connection ~ 9450 1600
-Wire Wire Line
-	9450 1600 9650 1600
 $Comp
 L Connector:Conn_01x01_Male J9
 U 1 1 5F939F6B
@@ -1474,7 +1381,7 @@ L Device:R R17
 U 1 1 5FA11DBB
 P 4550 2150
 F 0 "R17" H 4480 2104 50  0000 R CNN
-F 1 "0" H 4480 2195 50  0000 R CNN
+F 1 "1" H 4480 2195 50  0000 R CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4480 2150 50  0001 C CNN
 F 3 "~" H 4550 2150 50  0001 C CNN
 	1    4550 2150
@@ -1587,7 +1494,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 4100 5350 4100
 Text Label 5350 4100 2    50   ~ 0
-~IRQ_RTC
+~IRQ_TMR
 $Comp
 L LP_components:RX8010SJ U?
 U 1 1 5FB54CA0
@@ -1607,4 +1514,21 @@ Wire Wire Line
 	9550 5150 9300 5150
 Wire Wire Line
 	9550 5300 9300 5300
+NoConn ~ 1750 1850
+NoConn ~ 1750 1950
+NoConn ~ 1700 2050
+NoConn ~ 2550 1900
+NoConn ~ 6650 2100
+Wire Wire Line
+	5500 4200 5350 4200
+Text Label 5350 4200 2    50   ~ 0
+~BATT_EMPTY
+Wire Wire Line
+	8900 1600 9250 1600
+Connection ~ 9550 1600
+Wire Wire Line
+	9550 1600 9650 1600
+Wire Wire Line
+	9250 1600 9550 1600
+Connection ~ 9250 1600
 $EndSCHEMATC
