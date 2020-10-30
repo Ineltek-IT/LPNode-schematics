@@ -1304,19 +1304,6 @@ F 3 "" H 10650 5300 50  0001 C CNN
 	1    10650 5300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR09
-U 1 1 5F9EEA41
-P 10650 4800
-F 0 "#PWR09" H 10650 4650 50  0001 C CNN
-F 1 "+3.3V" H 10665 4973 50  0000 C CNN
-F 2 "" H 10650 4800 50  0001 C CNN
-F 3 "" H 10650 4800 50  0001 C CNN
-	1    10650 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10650 4800 10650 4900
 Wire Wire Line
 	10650 5200 10650 5300
 $Comp
@@ -1706,4 +1693,17 @@ F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT200XD.pdf" H
 	1    4500 6950
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5F9E8D43
+P 10650 4800
+F 0 "#PWR?" H 10650 4650 50  0001 C CNN
+F 1 "+BATT" H 10665 4973 50  0000 C CNN
+F 2 "" H 10650 4800 50  0001 C CNN
+F 3 "" H 10650 4800 50  0001 C CNN
+	1    10650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 4900 10650 4800
 $EndSCHEMATC
