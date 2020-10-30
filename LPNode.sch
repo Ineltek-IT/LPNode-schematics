@@ -380,7 +380,7 @@ U 1 1 5F91D4A3
 P 1250 4150
 F 0 "J1" H 1142 3725 50  0000 C CNN
 F 1 "UART_female" H 1142 3816 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1250 4150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 1250 4150 50  0001 C CNN
 F 3 "~" H 1250 4150 50  0001 C CNN
 	1    1250 4150
 	-1   0    0    1   
@@ -1120,7 +1120,7 @@ U 1 1 5F930E85
 P 7450 1050
 F 0 "J7" V 7250 1000 50  0000 L CNN
 F 1 "TP_Vboost" V 7350 900 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7450 1050 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 7450 1050 50  0001 C CNN
 F 3 "~" H 7450 1050 50  0001 C CNN
 	1    7450 1050
 	0    1    1    0   
@@ -1133,7 +1133,7 @@ U 1 1 5F9393B6
 P 9550 1400
 F 0 "J8" V 9350 1350 50  0000 L CNN
 F 1 "TP_LDO" V 9450 1250 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9550 1400 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9550 1400 50  0001 C CNN
 F 3 "~" H 9550 1400 50  0001 C CNN
 	1    9550 1400
 	0    1    1    0   
@@ -1144,7 +1144,7 @@ U 1 1 5F939F6B
 P 10900 1400
 F 0 "J9" V 10700 1350 50  0000 L CNN
 F 1 "TP_3V3" V 10800 1250 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10900 1400 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 10900 1400 50  0001 C CNN
 F 3 "~" H 10900 1400 50  0001 C CNN
 	1    10900 1400
 	0    1    1    0   
@@ -1219,7 +1219,7 @@ U 1 1 5F9B7A4E
 P 4000 4050
 F 0 "J5" V 3850 4000 50  0000 L CNN
 F 1 "TP_SDA" V 3950 3900 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4000 4050 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4000 4050 50  0001 C CNN
 F 3 "~" H 4000 4050 50  0001 C CNN
 	1    4000 4050
 	0    1    1    0   
@@ -1230,7 +1230,7 @@ U 1 1 5F9B993C
 P 4000 4650
 F 0 "J6" V 3950 4700 50  0000 R CNN
 F 1 "TP_SCL" V 3850 4750 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4000 4650 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4000 4650 50  0001 C CNN
 F 3 "~" H 4000 4650 50  0001 C CNN
 	1    4000 4650
 	0    -1   -1   0   
@@ -1312,7 +1312,7 @@ U 1 1 5F9FE9ED
 P 4250 1100
 F 0 "J10" V 4050 1050 50  0000 L CNN
 F 1 "TP_VBATT" V 4150 950 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4250 1100 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4250 1100 50  0001 C CNN
 F 3 "~" H 4250 1100 50  0001 C CNN
 	1    4250 1100
 	0    1    1    0   
@@ -1339,7 +1339,7 @@ U 1 1 5FA226EC
 P 4500 3050
 F 0 "J11" V 4346 3198 50  0000 L CNN
 F 1 "PWR_Meas" V 4437 3198 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4500 3050 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 4500 3050 50  0001 C CNN
 F 3 "~" H 4500 3050 50  0001 C CNN
 	1    4500 3050
 	0    1    1    0   
@@ -1694,10 +1694,10 @@ F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT200XD.pdf" H
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR0135
 U 1 1 5F9E8D43
 P 10650 4800
-F 0 "#PWR?" H 10650 4650 50  0001 C CNN
+F 0 "#PWR0135" H 10650 4650 50  0001 C CNN
 F 1 "+BATT" H 10665 4973 50  0000 C CNN
 F 2 "" H 10650 4800 50  0001 C CNN
 F 3 "" H 10650 4800 50  0001 C CNN
