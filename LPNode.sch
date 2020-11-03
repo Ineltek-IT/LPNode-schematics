@@ -1128,9 +1128,9 @@ F 3 "~" H 10900 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10550 1600 10900 1600
-Text Label 3900 4400 2    50   ~ 0
-SCL
 Text Label 3900 4300 2    50   ~ 0
+SCL
+Text Label 3900 4400 2    50   ~ 0
 SDA
 $Comp
 L Device:R R5
@@ -1193,24 +1193,24 @@ Connection ~ 4350 3850
 $Comp
 L Connector:Conn_01x01_Male J3
 U 1 1 5F9B7A4E
-P 4000 4050
-F 0 "J3" V 3850 4000 50  0000 L CNN
-F 1 "TP_SDA" V 3950 3900 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4000 4050 50  0001 C CNN
-F 3 "~" H 4000 4050 50  0001 C CNN
-	1    4000 4050
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J4
-U 1 1 5F9B993C
 P 4000 4650
-F 0 "J4" V 3950 4700 50  0000 R CNN
-F 1 "TP_SCL" V 3850 4750 50  0000 R CNN
+F 0 "J3" V 3850 4600 50  0000 L CNN
+F 1 "TP_SDA" V 3950 4500 50  0000 L CNN
 F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4000 4650 50  0001 C CNN
 F 3 "~" H 4000 4650 50  0001 C CNN
 	1    4000 4650
 	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 5F9B993C
+P 4000 4050
+F 0 "J4" V 3950 4100 50  0000 R CNN
+F 1 "TP_SCL" V 3850 4150 50  0000 R CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4000 4050 50  0001 C CNN
+F 3 "~" H 4000 4050 50  0001 C CNN
+	1    4000 4050
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	4000 4300 4000 4250
@@ -1444,7 +1444,7 @@ NoConn ~ 2550 1900
 NoConn ~ 6650 2100
 Wire Wire Line
 	5500 4200 5350 4200
-Text Label 5300 4500 2    50   ~ 0
+Text Label 5400 5300 2    50   ~ 0
 ~BATT_EMPTY
 Wire Wire Line
 	8900 1600 9250 1600
@@ -1454,14 +1454,6 @@ Wire Wire Line
 Wire Wire Line
 	9250 1600 9550 1600
 Connection ~ 9250 1600
-Wire Wire Line
-	6700 4500 6950 4500
-Wire Wire Line
-	6700 4600 6950 4600
-Text Label 6950 4500 0    50   ~ 0
-SDA_SEC
-Text Label 6950 4600 0    50   ~ 0
-SCL_SEC
 $Comp
 L Device:R R14
 U 1 1 5F9D3FCF
@@ -1518,8 +1510,6 @@ Wire Wire Line
 	9250 4100 9500 4100
 Wire Wire Line
 	9500 4100 9500 4050
-Wire Wire Line
-	5500 4500 5300 4500
 Text Label 5350 4200 2    50   ~ 0
 ~IRQ_ALM
 $Comp
@@ -1642,13 +1632,10 @@ NoConn ~ 5500 5200
 NoConn ~ 5500 5300
 NoConn ~ 5500 5400
 NoConn ~ 5500 5500
-NoConn ~ 5500 5600
 NoConn ~ 6700 5500
 NoConn ~ 6700 5400
 NoConn ~ 6700 5300
 NoConn ~ 6700 5200
-NoConn ~ 6700 5100
-NoConn ~ 6700 5000
 NoConn ~ 6700 4900
 NoConn ~ 6700 4800
 NoConn ~ 6700 4700
@@ -1716,10 +1703,10 @@ $EndComp
 Wire Wire Line
 	8700 4650 8700 4900
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0101
 U 1 1 5FA4F170
 P 10650 4750
-F 0 "#PWR?" H 10650 4600 50  0001 C CNN
+F 0 "#PWR0101" H 10650 4600 50  0001 C CNN
 F 1 "+3.3V" H 10665 4923 50  0000 C CNN
 F 2 "" H 10650 4750 50  0001 C CNN
 F 3 "" H 10650 4750 50  0001 C CNN
@@ -1728,4 +1715,19 @@ F 3 "" H 10650 4750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10650 4750 10650 4900
+Wire Wire Line
+	5500 5600 5400 5600
+Wire Wire Line
+	5400 5600 5400 5300
+NoConn ~ 5500 4500
+Text Label 6800 5100 0    50   ~ 0
+SCL_SEC
+Wire Wire Line
+	6800 5100 6700 5100
+Text Label 6850 5000 0    50   ~ 0
+SDA_SEC
+Wire Wire Line
+	6850 5000 6700 5000
+NoConn ~ 6700 4500
+NoConn ~ 6700 4600
 $EndSCHEMATC
