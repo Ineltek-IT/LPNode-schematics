@@ -8,3 +8,11 @@ The schematic will include:
 * One mikrobus connector
 * (Optional) ATECC608A for higher node security
 
+
+## to Buy
+
+- [ ] Renata battery 
+- [ ] UART to USB from Amazon (check pinout!)
+- [ ] Jumpers (not mandatory)
+
+
