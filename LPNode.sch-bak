@@ -347,37 +347,26 @@ Connection ~ 5100 3300
 $Comp
 L power:+3.3V #PWR08
 U 1 1 5F9124DC
-P 2350 3650
-F 0 "#PWR08" H 2350 3500 50  0001 C CNN
-F 1 "+3.3V" H 2365 3823 50  0000 C CNN
-F 2 "" H 2350 3650 50  0001 C CNN
-F 3 "" H 2350 3650 50  0001 C CNN
-	1    2350 3650
+P 2200 3950
+F 0 "#PWR08" H 2200 3800 50  0001 C CNN
+F 1 "+3.3V" H 2215 4123 50  0000 C CNN
+F 2 "" H 2200 3950 50  0001 C CNN
+F 3 "" H 2200 3950 50  0001 C CNN
+	1    2200 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5F9177BD
-P 1150 3500
-F 0 "#PWR01" H 1150 3250 50  0001 C CNN
-F 1 "GND" H 1155 3327 50  0000 C CNN
-F 2 "" H 1150 3500 50  0001 C CNN
-F 3 "" H 1150 3500 50  0001 C CNN
-	1    1150 3500
+P 1550 4200
+F 0 "#PWR01" H 1550 3950 50  0001 C CNN
+F 1 "GND" H 1555 4027 50  0000 C CNN
+F 2 "" H 1550 4200 50  0001 C CNN
+F 3 "" H 1550 4200 50  0001 C CNN
+	1    1550 4200
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:Conn_01x04_Female J1
-U 1 1 5F91D4A3
-P 800 3700
-F 0 "J1" H 692 3275 50  0000 C CNN
-F 1 "UART_female" H 692 3366 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 800 3700 50  0001 C CNN
-F 3 "~" H 800 3700 50  0001 C CNN
-	1    800  3700
-	-1   0    0    1   
-$EndComp
-Text Notes 1700 4000 0    50   ~ 0
+Text Notes 1900 3650 0    50   ~ 0
 To test w/o battery \n& power stage
 $Comp
 L power:GND #PWR07
@@ -394,9 +383,9 @@ Wire Wire Line
 	2000 5300 2000 5350
 Wire Wire Line
 	5400 3900 5500 3900
-Text Label 1500 3700 0    50   ~ 0
+Text Label 750  4200 2    50   ~ 0
 TX0
-Text Label 1500 3600 0    50   ~ 0
+Text Label 750  4300 2    50   ~ 0
 RX0
 Text Label 1950 4750 0    50   ~ 0
 IO0
@@ -451,72 +440,6 @@ F 3 "" H 6100 5950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6100 5950 6100 5900
-$Comp
-L power:GND #PWR03
-U 1 1 5F94446F
-P 1250 6650
-F 0 "#PWR03" H 1250 6400 50  0001 C CNN
-F 1 "GND" H 1255 6477 50  0000 C CNN
-F 2 "" H 1250 6650 50  0001 C CNN
-F 3 "" H 1250 6650 50  0001 C CNN
-	1    1250 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 5F948FB7
-P 1800 6300
-F 0 "C1" H 1850 6400 50  0000 L CNN
-F 1 "100n" H 1850 6200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1838 6150 50  0001 C CNN
-F 3 "~" H 1800 6300 50  0001 C CNN
-	1    1800 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_MEC_5G SW2
-U 1 1 5F9429C6
-P 1250 6350
-F 0 "SW2" V 1296 6302 50  0000 R CNN
-F 1 "SW_MEC_5G" V 1205 6302 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP" H 1250 6550 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1250 6550 50  0001 C CNN
-	1    1250 6350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5F94E963
-P 1800 6650
-F 0 "#PWR05" H 1800 6400 50  0001 C CNN
-F 1 "GND" H 1805 6477 50  0000 C CNN
-F 2 "" H 1800 6650 50  0001 C CNN
-F 3 "" H 1800 6650 50  0001 C CNN
-	1    1800 6650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 6650 1250 6550
-Wire Wire Line
-	1800 6650 1800 6450
-Wire Wire Line
-	1800 6150 1250 6150
-Connection ~ 1800 6150
-Wire Wire Line
-	1800 6150 2000 6150
-$Comp
-L Device:R R2
-U 1 1 5F954CC1
-P 2150 6150
-F 0 "R2" V 2050 6150 50  0000 C CNN
-F 1 "0" V 2250 6150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 6150 50  0001 C CNN
-F 3 "~" H 2150 6150 50  0001 C CNN
-	1    2150 6150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2300 6150 2400 6150
 Text Label 2500 6150 0    50   ~ 0
 EN
 Wire Wire Line
@@ -578,7 +501,6 @@ Wire Wire Line
 	2400 7100 2400 6150
 Wire Wire Line
 	1950 7100 2400 7100
-Connection ~ 2400 6150
 Wire Wire Line
 	2400 6150 2500 6150
 Wire Notes Line
@@ -589,8 +511,6 @@ Wire Notes Line
 	2950 5950 950  5950
 Wire Notes Line
 	950  5950 950  7750
-Text Notes 1000 6050 0    50   ~ 0
-Enable circuit
 $Comp
 L Security:ATECC608A-SSHDA U7
 U 1 1 5F9A1567
@@ -961,21 +881,8 @@ Wire Notes Line
 	4800 600  10350 600 
 Wire Notes Line
 	4800 2800 10350 2800
-$Comp
-L Device:Jumper JP1
-U 1 1 5FAAB79E
-P 2000 3800
-F 0 "JP1" H 2000 4064 50  0000 C CNN
-F 1 "JMP_EXT_PWR" H 2000 3973 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2000 3800 50  0001 C CNN
-F 3 "~" H 2000 3800 50  0001 C CNN
-	1    2000 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2350 3800 2350 3650
-Wire Wire Line
-	2350 3800 2300 3800
+	2200 4100 2200 3950
 $Comp
 L Device:CP C13
 U 1 1 5FAC85CC
@@ -1636,14 +1543,6 @@ F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT200XD.pdf" H
 	1    4500 6950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1150 3500 1000 3500
-Wire Wire Line
-	1000 3600 1500 3600
-Wire Wire Line
-	1000 3700 1500 3700
-Wire Wire Line
-	1700 3800 1000 3800
 $Comp
 L power:GND #PWR044
 U 1 1 5FA784F7
@@ -1710,12 +1609,12 @@ Wire Wire Line
 NoConn ~ 6700 4500
 NoConn ~ 6700 4600
 $Comp
-L Jumper:Jumper_2_Open JP?
+L Jumper:Jumper_2_Open JP4
 U 1 1 5FA53DB9
 P 1100 5000
-F 0 "JP?" V 1146 4912 50  0000 R CNN
+F 0 "JP4" V 1146 4912 50  0000 R CNN
 F 1 "PRGM" V 1055 4912 50  0000 R CNN
-F 2 "" H 1100 5000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 5000 50  0001 C CNN
 F 3 "~" H 1100 5000 50  0001 C CNN
 	1    1100 5000
 	0    -1   -1   0   
@@ -1730,4 +1629,44 @@ Wire Wire Line
 Wire Wire Line
 	1100 5300 1850 5300
 Connection ~ 1850 5300
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 5FA97D48
+P 1100 4200
+F 0 "J1" H 1150 4517 50  0000 C CNN
+F 1 "ESP-PROG" H 1150 4426 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 1100 4200 50  0001 C CNN
+F 3 "~" H 1100 4200 50  0001 C CNN
+	1    1100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4100 750  4100
+Wire Wire Line
+	900  4200 750  4200
+Wire Wire Line
+	900  4300 750  4300
+Wire Wire Line
+	1400 4200 1550 4200
+Wire Wire Line
+	1400 4300 1550 4300
+Text Label 750  4100 2    50   ~ 0
+EN
+Text Label 1550 4300 0    50   ~ 0
+IO0
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 5FB16A3F
+P 1900 4100
+F 0 "JP1" H 1900 4335 50  0000 C CNN
+F 1 "JMP_EXT_PWR" H 1900 4244 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 4100 50  0001 C CNN
+F 3 "~" H 1900 4100 50  0001 C CNN
+	1    1900 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4100 2200 4100
+Wire Wire Line
+	1400 4100 1700 4100
 $EndSCHEMATC
