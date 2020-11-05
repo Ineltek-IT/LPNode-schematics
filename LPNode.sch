@@ -1582,25 +1582,6 @@ Connection ~ 10350 1600
 Wire Wire Line
 	10350 1600 10550 1600
 $Comp
-L Switch:SW_MEC_5G SW1
-U 1 1 5FA7D395
-P 1200 5000
-F 0 "SW1" V 1246 4952 50  0000 R CNN
-F 1 "SW_MEC_5G" V 1155 4952 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP" H 1200 5200 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1200 5200 50  0001 C CNN
-	1    1200 5000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1200 4750 1200 4800
-Wire Wire Line
-	1200 4750 1850 4750
-Wire Wire Line
-	1200 5200 1200 5300
-Wire Wire Line
-	1200 5300 1850 5300
-$Comp
 L Device:C C2
 U 1 1 5FAA7631
 P 1850 5000
@@ -1613,12 +1594,10 @@ F 3 "~" H 1850 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 4850 1850 4750
-Connection ~ 1850 4750
 Wire Wire Line
 	1850 4750 1950 4750
 Wire Wire Line
 	1850 5150 1850 5300
-Connection ~ 1850 5300
 Wire Wire Line
 	1850 5300 2000 5300
 NoConn ~ 5500 4000
@@ -1730,4 +1709,25 @@ Wire Wire Line
 	6850 5000 6700 5000
 NoConn ~ 6700 4500
 NoConn ~ 6700 4600
+$Comp
+L Jumper:Jumper_2_Open JP4
+U 1 1 5FA53DB9
+P 1100 5000
+F 0 "JP4" V 1146 4912 50  0000 R CNN
+F 1 "PRGM" V 1055 4912 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 5000 50  0001 C CNN
+F 3 "~" H 1100 5000 50  0001 C CNN
+	1    1100 5000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 4750 1100 4750
+Wire Wire Line
+	1100 4750 1100 4800
+Connection ~ 1850 4750
+Wire Wire Line
+	1100 5200 1100 5300
+Wire Wire Line
+	1100 5300 1850 5300
+Connection ~ 1850 5300
 $EndSCHEMATC
