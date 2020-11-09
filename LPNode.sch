@@ -1665,4 +1665,32 @@ Wire Wire Line
 	2100 4100 2200 4100
 Wire Wire Line
 	1400 4100 1700 4100
+$Comp
+L Jumper:Jumper_2_Open JP?
+U 1 1 5FAB5748
+P 1950 6850
+F 0 "JP?" V 1996 6762 50  0000 R CNN
+F 1 "EN_JMP" V 1905 6762 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1950 6850 50  0001 C CNN
+F 3 "~" H 1950 6850 50  0001 C CNN
+	1    1950 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAB5C91
+P 2200 6550
+F 0 "#PWR?" H 2200 6300 50  0001 C CNN
+F 1 "GND" H 2205 6377 50  0000 C CNN
+F 2 "" H 2200 6550 50  0001 C CNN
+F 3 "" H 2200 6550 50  0001 C CNN
+	1    2200 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6550 1950 6550
+Wire Wire Line
+	1950 6550 1950 6650
+Wire Wire Line
+	1950 7050 1950 7100
 $EndSCHEMATC
