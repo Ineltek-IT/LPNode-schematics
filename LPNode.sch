@@ -587,17 +587,6 @@ Text Label 8000 5200 2    50   ~ 0
 SDA
 Text Label 8000 5100 2    50   ~ 0
 SCL
-$Comp
-L Connector:Conn_01x02_Female J6
-U 1 1 5F92463E
-P 4350 1800
-F 0 "J6" H 4242 1475 50  0000 C CNN
-F 1 "Battery_Conn" H 4242 1566 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4350 1800 50  0001 C CNN
-F 3 "~" H 4350 1800 50  0001 C CNN
-	1    4350 1800
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4550 1350 4550 1700
 $Comp
@@ -837,17 +826,6 @@ Text Label 7450 1400 2    50   ~ 0
 Vboost
 Text Label 6800 2300 1    50   ~ 0
 Vboost
-$Comp
-L Device:Jumper JP2
-U 1 1 5FA720B1
-P 3700 1350
-F 0 "JP2" H 3700 1614 50  0000 C CNN
-F 1 "JMP_Charger" H 3700 1523 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3700 1350 50  0001 C CNN
-F 3 "~" H 3700 1350 50  0001 C CNN
-	1    3700 1350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4000 1350 4250 1350
 Wire Notes Line
@@ -856,17 +834,6 @@ Wire Notes Line
 	950  2800 4050 2800
 Wire Notes Line
 	950  600  4050 600 
-$Comp
-L Device:Jumper JP3
-U 1 1 5FA93B73
-P 9950 1600
-F 0 "JP3" H 9950 1864 50  0000 C CNN
-F 1 "JMP_Power_stage" H 9950 1773 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 1600 50  0001 C CNN
-F 3 "~" H 9950 1600 50  0001 C CNN
-	1    9950 1600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10250 1600 10350 1600
 Wire Wire Line
@@ -1007,17 +974,6 @@ F 3 "~" H 7450 1050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7450 1250 7450 1600
-$Comp
-L Connector:Conn_01x01_Male J10
-U 1 1 5F9393B6
-P 9550 1400
-F 0 "J10" V 9350 1350 50  0000 L CNN
-F 1 "TP_LDO" V 9450 1250 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9550 1400 50  0001 C CNN
-F 3 "~" H 9550 1400 50  0001 C CNN
-	1    9550 1400
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:Conn_01x01_Male J12
 U 1 1 5F939F6B
@@ -1697,4 +1653,48 @@ Text Notes 4200 2050 1    50   ~ 0
 ICP543759PMT
 Text Notes 4000 1900 2    50   ~ 0
 I_ch = 666mA\n            (0.5C) 
+$Comp
+L Device:Jumper JP3
+U 1 1 5FA93B73
+P 9950 1600
+F 0 "JP3" H 9950 1864 50  0000 C CNN
+F 1 "JMP_Power_stage" H 9950 1773 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 1600 50  0001 C CNN
+F 3 "~" H 9950 1600 50  0001 C CNN
+	1    9950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J10
+U 1 1 5F9393B6
+P 9550 1400
+F 0 "J10" V 9350 1350 50  0000 L CNN
+F 1 "TP_LDO" V 9450 1250 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9550 1400 50  0001 C CNN
+F 3 "~" H 9550 1400 50  0001 C CNN
+	1    9550 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper JP2
+U 1 1 5FA720B1
+P 3700 1350
+F 0 "JP2" H 3700 1614 50  0000 C CNN
+F 1 "JMP_Charger" H 3700 1523 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3700 1350 50  0001 C CNN
+F 3 "~" H 3700 1350 50  0001 C CNN
+	1    3700 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J6
+U 1 1 5F92463E
+P 4350 1800
+F 0 "J6" H 4242 1475 50  0000 C CNN
+F 1 "Battery_Conn" H 4242 1566 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4350 1800 50  0001 C CNN
+F 3 "~" H 4350 1800 50  0001 C CNN
+	1    4350 1800
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

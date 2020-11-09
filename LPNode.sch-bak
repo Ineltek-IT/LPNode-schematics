@@ -29,7 +29,7 @@ L Device:CP C6
 U 1 1 5F8A3C20
 P 5050 1750
 F 0 "C6" H 5168 1796 50  0000 L CNN
-F 1 "10uF-X5R" H 5168 1705 50  0000 L CNN
+F 1 "10uF-X5R" H 4850 1950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 1600 50  0001 C CNN
 F 3 "~" H 5050 1750 50  0001 C CNN
 	1    5050 1750
@@ -588,10 +588,10 @@ SDA
 Text Label 8000 5100 2    50   ~ 0
 SCL
 $Comp
-L Connector:Conn_01x02_Female J6
+L Connector:Conn_01x02_Female J_BATT
 U 1 1 5F92463E
 P 4350 1800
-F 0 "J6" H 4242 1475 50  0000 C CNN
+F 0 "J_BATT" H 4242 1475 50  0000 C CNN
 F 1 "Battery_Conn" H 4242 1566 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4350 1800 50  0001 C CNN
 F 3 "~" H 4350 1800 50  0001 C CNN
@@ -838,10 +838,10 @@ Vboost
 Text Label 6800 2300 1    50   ~ 0
 Vboost
 $Comp
-L Device:Jumper JP2
+L Device:Jumper JP_Charger
 U 1 1 5FA720B1
 P 3700 1350
-F 0 "JP2" H 3700 1614 50  0000 C CNN
+F 0 "JP_Charger" H 3700 1614 50  0000 C CNN
 F 1 "JMP_Charger" H 3700 1523 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3700 1350 50  0001 C CNN
 F 3 "~" H 3700 1350 50  0001 C CNN
@@ -857,10 +857,10 @@ Wire Notes Line
 Wire Notes Line
 	950  600  4050 600 
 $Comp
-L Device:Jumper JP3
+L Device:Jumper JP_PowerStage
 U 1 1 5FA93B73
 P 9950 1600
-F 0 "JP3" H 9950 1864 50  0000 C CNN
+F 0 "JP_PowerStage" H 9950 1864 50  0000 C CNN
 F 1 "JMP_Power_stage" H 9950 1773 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 1600 50  0001 C CNN
 F 3 "~" H 9950 1600 50  0001 C CNN
